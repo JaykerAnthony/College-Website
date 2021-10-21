@@ -1,0 +1,162 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="uni.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>JBIET|Account page</title>
+
+</head>
+
+<body>
+    <!----------------HEADER------------------->
+    <section class="head">
+        <nav>
+            <a href="uni.html"><img src="images/codehub_logo.png"></a>
+            <i class="fas fa-ellipsis-v" onclick="show()"></i>
+            <div class="account-nav">
+                <div class="nav-links" id="navlinks">
+                    <i class="fas fa-times" onclick="hide()"></i>
+
+                    <ul>
+
+                        <li><a href="uni.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <h1>LOGIN | REGISTER</h1>
+            <div class="arr">
+                <i class="fas fa-arrow-up" id="arr"></i>
+            </div>
+    </section>
+    <!-----------ACCOUNT PAGE--------------------->
+    <section>
+        <div class="accountpage">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="form-container">
+                            <h3 id="login">Faculty Login</h3>
+                            <div class="form-but">
+                                <span onclick="login()" id="head">Login</span>
+                                <span onclick="register()" id="head">Register</span>
+                                <hr id="indicator">
+
+                            </div>
+                            <form id="loginform">
+                                <input type="text" placeholder="Faculty name">
+                                <input type="password" placeholder="password">
+                                <button type="submit" class="butt">Login</button>
+                                <a href="" id="fp">Forgot password</a>
+                            </form>
+                            <form id=registrationform>
+                                <input type="text" placeholder="username">
+                                <input type="email" placeholder="faculty@gmail.com">
+                                <input type="password" placeholder="password">
+                                <button type="submit" class="butt">Register</button>
+                            </form>
+
+                        </div>
+                    </div>
+                    <!---------SECOND LOGIN----------------------->
+                    <div class="col-2">
+                        <div class="form-container">
+                            <h3 id="login">Student Login</h3>
+                            <div class="form-but">
+                                <span onclick="loginn()" id="head">Login</span>
+                                <span onclick="registerr()" id="head">Register</span>
+                                <hr id="indicator2">
+
+                            </div>
+                            <form id="loginform2">
+                                <input type="text" placeholder="Student name">
+                                <input type="password" placeholder="password">
+                                <button type="submit" class="butt">Login</button>
+                                <a href="" id="fp">Forgot password</a>
+                            </form>
+                            <form id="registrationform2">
+                                <input type="text" placeholder="student name">
+                                <input type="email" placeholder="Student@gmail.com">
+                                <input type="password" placeholder="password">
+                                <button type="submit" class="butt">Register</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <hr>
+    <!------------------------FOOTER-->
+    <section class="footer">
+        <div class="roww">
+            <div class="coll-1">
+                <img src="images/codehub_logo2.png">
+                <h3>Visit Us At:<br><a href="https://www.jbiet.edu.in" class="get">www.jbiet.com</a></h3>
+
+
+            </div>
+            <div class="coll-2">
+                <h3>Quick Links</h3>
+                <ul>
+
+                    <li><a href="uni.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></Li>
+                    <li><a href="account.html">ACCOUNT</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+
+                </ul>
+            </div>
+            <div class="coll-3">
+                <h3>Follow Us At:</h3>
+                <div class="social">
+                    <a href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook-f" id="fb"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" id="ig"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter" id="tw"></i></a>
+                    <a href="https://web.whatsapp.com/" target="_blank"></a> <i class="fab fa-whatsapp" id="wa"
+                        title="Whatsapp"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p id="foot">copyright@2021-JAYKER ANTHONY</p>
+    </section>
+
+
+    <script src="uni.js"></script>
+    <script>
+        const arrow = document.querySelector(".arr")
+        arrow.addEventListener("click", function () {
+            // window.scrollTo(0, 0)
+            window.scrollTo({
+                left: 0,
+                top: 0,
+                behavior: "smooth"
+            }
+            )
+        });
+
+    </script>
+
+</body>
+
+
+
+
+</body>
+
+</html>

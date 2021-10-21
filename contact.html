@@ -1,0 +1,156 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="uni.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>JBIET|contact page</title>
+
+</head>
+
+<body>
+    <!----------------HEADER------------------->
+    <section class="head">
+        <nav>
+            <a href="uni.html"><img src="images/codehub_logo.png"></a>
+            <i class="fas fa-ellipsis-v" onclick="show()"></i>
+            <div class="nav-links" id="navlinks">
+                <i class="fas fa-times" onclick="hide()"></i>
+
+                <ul>
+
+                    <li><a href="uni.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="account">
+                <div>
+                    <a href="account.html" class="butt">Login</a>
+                </div>
+                <div>
+                    <a href="account.html" class="butt" id="button2">Sign-Up</a>
+                </div>
+            </div>
+        </nav>
+        <h1>Contact Us</h1>
+        <div class="arr">
+            <i class="fas fa-arrow-up" id="arr"></i>
+        </div>
+    </section>
+    <!---------------------------CONTACT US--------------->
+    <section>
+        <div class="contact">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30470.62624434093!2d78.62467557499514!3d17.323832489458027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba06b663da317%3A0xf865b596ae3ea1b!2sPedda%20Amberpet%2C%20Telangana%20501505!5e0!3m2!1sen!2sin!4v1623060420017!5m2!1sen!2sin"
+                width="1050" height="450" style="border: 1px;" allowfullscreen="no" loading="fast"></iframe>
+        </div>
+        <div class="row">
+            <div class="contact1">
+                <div>
+                    <i class="fas fa-home" id="icon"></i>
+
+                    <span id="span">
+                        <h4>XYZ Road,6complex building</h4>
+                        <p>hyderabad,Telanganna</p>
+                    </span>
+
+                    <i class="fas fa-phone"></i>
+                    <span id="span">
+                        <h4>+919398293482</h4>
+                        <p>Monday to Saturday,10AM To 6PM</p>
+                    </span>
+                    <i class="fas fa-envelope"></i>
+                    <span id="span">
+                        <h4>Roveranthony123@gmail.com</h4>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact2">
+                <form action="uni.php" method="POST">
+                    <input type="text" name="name" placeholder="Enter Your name" required>
+
+
+
+                    <input type="email" name="email" placeholder="Enter Your email" required>
+
+
+
+                    <input type="text" name="subject" placeholder="Enter Your subject" required>
+                    <textarea rows="10" name="message" placeholder="Type your message" required></textarea>
+                    <button type="submit" id="knowmore">Send Message</button>
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-------------------FOOTER------------------>
+    <hr>
+    <section class="footer">
+        <div class="roww">
+            <div class="coll-1">
+                <img src="images/codehub_logo2.png">
+                <h3>Visit Us At:<br><a href="https://www.jbiet.edu.in" class="get">www.jbiet.com</a></h3>
+
+
+            </div>
+            <div class="coll-2">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="uni.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></Li>
+                    <li><a href="account.html">ACCOUNT</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+
+                </ul>
+            </div>
+            <div class="coll-3">
+                <h3>Follow Us At:</h3>
+                <div class="social">
+                    <a href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook-f" id="fb"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" id="ig"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter" id="tw"></i></a>
+                    <a href="https://web.whatsapp.com/" target="_blank"></a> <i class="fab fa-whatsapp" id="wa"
+                        title="Whatsapp"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p id="foot">copyright@2021-JAYKER ANTHONY</p>
+    </section>
+
+
+    <script src="uni.js"></script>
+    <script>
+        const arrow = document.querySelector(".arr")
+        arrow.addEventListener("click", function () {
+            // window.scrollTo(0, 0)
+            window.scrollTo({
+                left: 0,
+                top: 0,
+                behavior: "smooth"
+            }
+            )
+        });
+
+    </script>
+
+</body>
+
+
+
+
+</body>
+
+</html>
